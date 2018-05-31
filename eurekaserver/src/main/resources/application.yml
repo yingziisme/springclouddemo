@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-server
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 60000
+    wait-time-in-ms-when-sync-empty: 60000
+server:
+  port: 8761
